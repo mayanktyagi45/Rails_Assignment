@@ -1,0 +1,18 @@
+<%= stylesheet_link_tag 'home.css', "data-turbo-track": "reload" %>
+<main class="centered-container">
+  <section class="centered-section">
+    <h1>ComproDLS Onboarding Application</h1>
+    <button>Add Content</button>
+  </section>
+
+  <section class="centered-section">
+    <div id="training_plans">
+      <% @training_plans.each do |training_plan| %>
+        <%= render training_plan, training_plan: training_plan %>
+        <p>
+          <%= link_to "Show this training plan", training_plan %>
+        </p>
+      <% end %>
+    </div>
+  </section>
+</main>

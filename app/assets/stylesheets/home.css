@@ -1,0 +1,12 @@
+.centered-container {
+  display: flex;
+  flex-direction: column; /* Stack sections vertically */
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  height: 100vh; /* Ensure full viewport height */
+}
+
+.centered-section {
+  text-align: center; /* Center content horizontally within the section */
+  margin-bottom: 20px; /* Add some spacing between sections if needed */
+}
